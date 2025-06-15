@@ -1,6 +1,7 @@
 import { createStore } from "./customStore";
 
 export type FormState = {
+  currentStep: number;
   formData: {
     personal: {
       firstName: string;
@@ -20,6 +21,7 @@ export type FormState = {
 };
 
 const initialState: FormState = {
+  currentStep: 1,
   formData: {
     personal: {
       firstName: "",
